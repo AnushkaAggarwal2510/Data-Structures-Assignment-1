@@ -1,14 +1,14 @@
-Question 2) Design the logic to remove the duplicate elements from an Array and after the deletion the array should containtheunique elements.
+Question 2) Design the logic to remove the duplicate elements from an Array and after the deletion the array should contain the unique elements.
 
 Answer 2)
 #include <stdio.h>
 int main() {
-    int arr[100], n, i, j, k;
+    int arr[100],n,i,j,k;
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
     printf("Enter %d elements:\n", n);
-    for(i = 0; i < n; i++)
+    for(i=0;i<n;i++)
         scanf("%d", &arr[i]);
 
     for(i=0; i<n; i++) {
