@@ -16,7 +16,6 @@ int main() {
         printf("Matrix multiplication not possible!\n");
         return 0;
     }
-
     printf("Enter elements of first matrix:\n");
     for(i=0;i<r1;i++)
         for(j=0;j<c1;j++)
@@ -33,12 +32,12 @@ int main() {
 
     for(i=0;i<r1;i++){
         for (j=0;j<c2;j++){
+            C[i][j]=0;
             for(k=0;k<c1;k++){
-                C[i][j]= A[i][k]*B[k][j];
+                C[i][j]= C[i][j] + A[i][k]*B[k][j];
             }
         }
     }
-
     printf("Resultant matrix:\n");
     for (i=0;i<r1;i++){
         for(j=0;j<c2;j++){
